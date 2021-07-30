@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefas - aFazer</title>
+    <link rel="icon" href="./images/aFazer.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body id="userArea">
+    <div class="container">
+        <div class="row header">
+            <a href="./loginArea.html">
+            <img src="./images/logout.png" alt="Logout" title="Logout">
+            </a>
+            <h1>Minhas Tarefas</h1>
+        </div>
+        <form action="submit" id="formTarefas">
+            <div class="row inputs">
+                <div class="col-lg-4">
+                    <input type="text" placeholder="Tarefa" id="nomeTarefa">
+                </div>
+                <div class="col-lg-7">
+                    <input type="text" placeholder="Descrição" id="descricaoTarefa">
+                </div>
+                <div class="col-lg-1">
+                    <input type="button" value="Salvar" class="button" id="salvarTarefa">
+                </div>
+            </div>
+        </form>
+        <div class="row row-guide">
+            <div class="col-md-3"> # </div>
+            <div class="col-md-3"> Tarefa </div>
+            <div class="col-md-3"> Descrição </div>
+            <div class="col-md-3 acoes"> Ação </div>
+        </div>
+    </div>
+    <div class="container" id="listaTarefas">
+
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

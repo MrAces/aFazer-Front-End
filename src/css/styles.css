@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(https://intraprendere.net/wp-content/uploads/2016/11/Controllo-di-gestione.jpg);
+    background-size: cover;
+    background-position-y: -80px;
+}
+
+
+#user-input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card-input {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: #ebf1f3;
+    padding: 30px 50px 15px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #D5E8EC;
+}
+
+.redes img {
+    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.redes img:hover {
+    cursor: pointer;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.group input {
+    height: 25px;
+    margin: 4px;
+    border: 1px solid #ceceec;
+    border-radius: 5px;
+}
+
+span {
+    color: #3e6464;
+    font-weight: 500;
+}
+
+.group h3 {
+    color: #3e6464;
+    margin: 0 0 20px;
+}
+
+.group h5 {
+    margin: 20px 0 10px;
+}
+
+.group a {
+    color: #3e6464;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#userArea {
+    background: #e2edf0;
+    margin: 50px;
+}
+
+#userArea input {
+    width: 100%;
+}
+
+#userArea h1 {
+    display: unset !important;
+    color: #3e6464;
+    font-weight: bold;
+}
+
+#userArea img {
+    height: 30px;
+    width: 30px;
+    margin: 10px 8px 0 0;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.row {
+    padding: 5px 0 5px;
+}
+
+.row-guide {
+    padding: 10px 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top: solid 1px #c1dadf;
+    border-bottom: solid 3px #c1dadf;
+}
+
+.chores {
+    display: flex;
+    align-items: center;
+}
+
+.chores:hover {
+    cursor: pointer;
+    background: #c8dee2;
+}
+
+.acoes {
+    padding-left: 50px;
+}
+
+.button {
+    background: #3e6464;
+    color: #D5E8EC;
+    cursor: pointer;
+    width: unset !important;
+    border: #385858 1px solid;
+    border-radius: 5px;
+}
+
+.btn-editar, .btn-remover {
+    color: whitesmoke;
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 3px 2px;
+    cursor: pointer;
+    width: 70px;
+}
+
+.btn-editar {
+    background-color: green;
+    border-color: #077707;
+}
+
+.btn-remover {
+    background-color: #c41616;
+    border-color:#b11313
+}
+
+
+button {
+    margin: 4px 1px;
+}
+
+button:focus {
+    outline: none;
+}
+
+#listaTarefas {
+    display: flex;
+    flex-direction: column-reverse;
+}

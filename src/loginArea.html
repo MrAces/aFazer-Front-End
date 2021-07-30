@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aFazer - Login</title>
+    <link rel="icon" href="./images/aFazer.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<body>
+    <div id="user-input">
+        <div class="card-input">
+            <form action="" class="group">
+                <h3>Faça login:</h3>
+                <input type="text" id="userLogin" name="userLogin" placeholder="Usuário"
+                    required>
+                <input type="password" id="senhaLogin" name="senhaLogin" placeholder="Digite sua senha" required>
+                <input type="button" value="Entrar" id="entrar" name="entrar" class="button" onclick="login()">
+                <h5>Não tem uma conta? <a href="./registerArea.html">Cadastre-se aqui!</a></h5>
+                <h6>Em breve você poderá usar:</h6>
+                <div class="redes">
+                    <img src="./images/google.png" alt="Facebook" title="Em breve">
+                    <img src="./images/facebook.png" alt="Google" title="Em breve">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>
