@@ -1,49 +1,9 @@
-const usuarios = JSON.parse(localStorage.getItem('Usuarios')) || [];
-
-const listaTarefas = document.getElementById('listaTarefas')
+const listaTarefas = document.getElementById('listaTarefas');
 const criarTarefas = document.getElementById('tarefasEL');
 
 const nomeTarefa = document.getElementById("nomeTarefa");
-const descricaoTarefa = document.getElementById("descricaoTarefa")
-const salvarTarefa = document.getElementById('salvarTarefa')
-
-
-
-function login() {
-  const loginUsuario = {
-    user: document.getElementById("userLogin").value,
-    senha: document.getElementById("senhaLogin").value,
-  }
-  for (let usuario of usuarios) {
-    if (loginUsuario.user === usuario.user && loginUsuario.senha === usuario.senha) {
-      window.location.href = './userArea.html';
-      return;
-    }
-  }
-  alert('Usuário/senha Incorretos ou Inexistentes')
-  return;
-};
-
-
-function cadastrar() {
-  const loginUsuario = {
-    user: document.getElementById("userUsuario").value,
-    senha: document.getElementById("senhaUsuario").value,
-  };
-  for (let usuario of usuarios) {
-    if (loginUsuario.user === usuario.user) {
-      alert("Ops, esse usuário já existe!");
-      return;
-    }
-  }
-  usuarios.push(loginUsuario);
-  localStorage.setItem('Usuarios', JSON.stringify(usuarios));
-  alert("Cadastrado com sucesso!");
-  window.location.href = './loginArea.html';
-};
-
-
-
+const descricaoTarefa = document.getElementById("descricaoTarefa");
+const salvarTarefa = document.getElementById('salvarTarefa');
 
 axios.defaults.baseURL = 'https://afazer-beta-ver10.herokuapp.com/';
 
